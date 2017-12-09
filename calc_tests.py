@@ -31,6 +31,23 @@ class CalcUnitTests(unittest.TestCase):
     def test_008_floating_point_1357246_1902_float(self):
         self.assertEqual(calc.evaluate_floating_point_number("1357246.1902"), 1357246.1902)
 
+    def test_009_single_hex_6(self):
+        self.assertEqual(calc.evaluate_single_hexadecimal_digit("6"), 6)
+
+    def test_010_single_hex_F(self):
+        self.assertEqual(calc.evaluate_single_hexadecimal_digit("F"), 15)
+
+    def test_011_single_hex_F9(self):
+        self.assertEqual(calc.evaluate_hexadecimal("F9"), 249)
+
+    def test_012_single_hex_123(self):
+        self.assertEqual(calc.evaluate_hexadecimal("123"), 291)
+
+    def test_012_single_hex_123(self):
+        self.assertEqual(calc.evaluate_hexadecimal("123"), 291)
+
+    def test_013_single_hex_8DEF123(self):
+        self.assertEqual(calc.evaluate_hexadecimal("8DEF123"), 148828451)
 
 if __name__ == "__main__":
     unittest.main(verbosity=2);
