@@ -8,7 +8,7 @@ import calc
 
 class CalcUnitTests(unittest.TestCase):
     def test_001_single_digit_2(self):
-        self.assertEqual(calc.evaluate_single_digit("1"), 2)
+        self.assertEqual(calc.evaluate_single_digit("2"), 2)
 
     def test_002_single_digit_9(self):
         self.assertEqual(calc.evaluate_single_digit("9"), 9)
