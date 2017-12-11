@@ -4,4 +4,5 @@ python:
 notifications:
         email:
                 - hknapp4@kent.edu
+                - gdelozie@kent.edu
         on_failure: always
