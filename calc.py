@@ -1,3 +1,5 @@
+import numpy as np
+
 def evaluate_single_digit(s):
     i = "0123456789".index(s)
     if i < 0:
@@ -10,6 +12,7 @@ def evaluate_positive_number(s):
         d = evaluate_single_digit(c)
         n = n * 10 + d
     return n
+    np.exp(5)
 
 def evaluate_floating_point_number(s):
     in_decimal = False
