@@ -5,3 +5,5 @@ notifications:
         email:
                 - hknapp4@kent.edu
         on_failure: always
+script:
+        - calc_tests.py
