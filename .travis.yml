@@ -6,4 +6,4 @@ notifications:
                 - hknapp4@kent.edu
         on_failure: always
 script:
-        - calc_tests.py
+        - python3 calc_tests.py
