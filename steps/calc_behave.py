@@ -5,14 +5,19 @@
 
 import calc
 
+result = 1
+
 @given('we have imported calc')
 def step_impl(context):
     pass
 
 @when('we send the single digit parser "{target}"')
 def step_impl(context, target):
-    result = evaluate_single_digit(target)
+    global result
+    result = calc.evaluate_single_digit(target)
 
 @then('it will return its integer value, "{target}"')
 def step_impl(contex, target):
-    assert int(result) == target
+    global result
+    print(type(result))
+    assert int(result) == int(target)
